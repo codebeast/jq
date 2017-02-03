@@ -1,0 +1,68 @@
+{
+  "name": "nativescript-template-ng-groceries",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Template for starting Groceries as part of the NativeScript Getting Started Tutorial",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjvantoll/nativescript-template-ng-groceries.git"
+  },
+  "keywords": [
+    "NativeScript"
+  ],
+  "nativescript": {
+    "id": "org.nativescript.groceries"
+  },
+  "dependencies": {
+    "@angular/common": "2.4.3",
+    "@angular/compiler": "2.4.3",
+    "@angular/core": "2.4.3",
+    "@angular/forms": "2.4.3",
+    "@angular/http": "2.4.3",
+    "@angular/platform-browser": "2.4.3",
+    "@angular/platform-browser-dynamic": "2.4.3",
+    "@angular/router": "3.4.3",
+    "nativescript-angular": "1.4.0",
+    "nativescript-theme-core": "~1.0.2",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "~5.0.1",
+    "tns-core-modules": "2.5.0"
+  },
+  "devDependencies": {
+    "nativescript-dev-android-snapshot": "^0.*.*",
+    "nativescript-dev-typescript": "^0.3.5",
+    "typescript": "~2.1.0",
+    "zone.js": "~0.7.2"
+  },
+  "gitHead": "564cefcc0686b93e460b77043f00f68110b9deed",
+  "bugs": {
+    "url": "https://github.com/tjvantoll/nativescript-template-ng-groceries/issues"
+  },
+  "homepage": "https://github.com/tjvantoll/nativescript-template-ng-groceries#readme",
+  "_id": "nativescript-template-ng-groceries@1.0.0",
+  "scripts": {},
+  "_shasum": "741f4efce96408148f67118ab38c476da096b2bf",
+  "_from": "nativescript-template-ng-groceries@latest",
+  "_npmVersion": "3.10.8",
+  "_nodeVersion": "6.9.1",
+  "_npmUser": {
+    "name": "tjvantoll",
+    "email": "tj.vantoll@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "tjvantoll",
+      "email": "tj.vantoll@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "741f4efce96408148f67118ab38c476da096b2bf",
+    "tarball": "https://registry.npmjs.org/nativescript-template-ng-groceries/-/nativescript-template-ng-groceries-1.0.0.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nativescript-template-ng-groceries-1.0.0.tgz_1485961280168_0.2989849322475493"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nativescript-template-ng-groceries/-/nativescript-template-ng-groceries-1.0.0.tgz"
+}
