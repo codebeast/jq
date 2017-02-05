@@ -3,6 +3,8 @@ import { User } from "../../shared/user/user";
 import { UserService } from "../../shared/user/user.service";
 import { Router } from "@angular/router";
 
+
+
 @Component({
 	selector: "my-app",
 	providers: [UserService],
@@ -32,7 +34,7 @@ export class LoginComponent {
 			(error) => alert("Unfortunately we could not find your account.")
 			);
 	}
-	
+
 	signUp() {
 		this.userService.register(this.user)
 		.subscribe(
@@ -43,6 +45,7 @@ export class LoginComponent {
 			() => alert("Unfortunately we were unable to create your account.")
 			);
 	}
+
 	toggleDisplay() {
 		this.isLoggingIn = !this.isLoggingIn;
 	}
