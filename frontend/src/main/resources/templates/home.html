@@ -2,139 +2,340 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>Tracking</title>
+    <title>JQ</title>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="/stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/stylesheets/home.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
-<nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Jelqing.io</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="/dashboard">Login</a></li>
-        </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="/dashboard">Login</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+<nav class="white">
+    <div class="nav-wrapper white">
+        <div class="container">
+            <div class="row" style="height:100px">
+                <a href="#" class="brand-logo">JQ</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down teal-text accent-3">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>
 
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br/><br/>
-            <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-            <div class="row center">
-                <a href="/signup" id="download-button"
-                   class="btn-large waves-effect waves-light teal lighten-1">Sign up</a>
-            </div>
-            <br/><br/>
-
-        </div>
-    </div>
-    <div class="parallax"><img src="/images/frog.jpg" alt="Unsplashed background img 1"/></div>
-</div>
-
-
-<div class="container">
-    <div class="section">
-
-        <!--   Icon Section   -->
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">Speeds up development</h5>
-
-                    <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                        incorporate our custom components. Additionally, we refined animations and transitions to
-                        provide a smoother experience for developers.</p>
+<main>
+    <div id="hero" style="height: 766px;">
+        <div class="container" id="hero-text-container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1 id="hero-title" itemprop="description" style="font-size: 36px;"><strong class="bold">JQ
+                    </strong><span
+                            class="thin"> is the simplest way for any man<br/> to reach his JQ goal</span>
+                    </h1>
                 </div>
             </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="center-align">
+                        <a href="#create" class="btn btn-large create-list-link hero-btn">Get Started
+                            <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;"
+                                 viewBox="0 0 24 24">
+                                <path fill="#ffffff"
+                                      d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+                            </svg>
 
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                    <h5 class="center">User Experience Focused</h5>
 
-                    <p class="light">By utilizing elements and principles of Material Design, we were able to create a
-                        framework that incorporates components and animations that provide more feedback to users.
-                        Additionally, a single underlying responsive system across all platforms allow for a more
-                        unified user experience.</p>
-                </div>
-            </div>
-
-            <div class="col s12 m4">
-                <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                    <h5 class="center">Easy to work with</h5>
-
-                    <p class="light">We have provided detailed documentation as well as specific code examples to help
-                        new users get started. We are also always open to feedback and can answer any questions a user
-                        may have about Materialize.</p>
+                        </a>
+                        <a href="#learn" class="btn btn-large white grey-text hero-btn">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-</div>
+    <div class="divider"></div>
+    <div class="container">
+        <!-- Testimonial -->
+        <div class="row hide-on-small-only">
+            <div class="col s12 m4 testimonial">
+                <div class="black-text">"It's so simple -- as both a manager and a user. And it doesnt have too many
+                    bells and whistles that make things confusing. Just the right price too."
+                </div>
+                <div class="grey-text text-lighten-1">Scott<br/>California, United States</div>
+            </div>
+            <div class="col s12 m4 testimonial">
+                <div class="black-text">"Makes group email lists really easy to use and administer - Fast and reliable -
+                    Constantly improving - Great web design."
+                </div>
+                <div class="grey-text text-lighten-1">Sam<br/>Brighton, England</div>
+            </div>
+            <div class="col s12 m4 testimonial">
+                <div class="black-text">"Gaggle mail is working well for a small nonprofit group that I support. It is
+                    perfect for creating a distribution list that we can all send to."
+                </div>
+                <div class="grey-text text-lighten-1">Jessica<br/>Texas, United States</div>
+            </div>
+        </div>
+        <div class="divider hide-on-small-only"></div>
 
+        <!-- Create List -->
+        <div class="row" id="create-row">
+            <span id="create" class="scrollspy"></span>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="section center">
+                    <h3 class="thin">Create your <strong class="bold">free</strong> account now.</h3>
+                    <p class="flow-text">Upgrade to a premium account from just <span
+                            class="materialize-red-text lighten-2">$10 per year</span>.
+                    </p>
+                </div>
+            </div>
 
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-        <div class="container">
+            <div id="create-list-login-container" class="row create-list-button disabled">
+                <div class="col s12 m6 l6  offset-m3 offset-l3 create-list-login-right">
+                    <div class="create-list-login-panel center">
+                        <div>
+                            <input class="new-list-name-hidden" type="hidden" name="new-list-name" value=""/>
+                            <div class="center">
+                                <p class="flow-text">Create your account.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 input-field">
+                                    <input id="new-your-email" name="new-your-email" type="email"/>
+                                    <label for="new-your-email">Your email address</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12 input-field">
+                                    <input id="new-your-password" name="new-your-password" type="password"/>
+                                    <label for="new-your-password">Pick a password</label>
+                                </div>
+                            </div>
+                            <div class="row center">
+                                <button class="btn" id="create-account-btn">Create Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                <a href="/terms">Terms and conditions</a>
             </div>
         </div>
-    </div>
-    <div class="parallax"><img src="/images/background2.jpg" alt="Unsplashed background img 2"/></div>
-</div>
+        <div class="divider"></div>
 
-<div class="container">
-    <div class="section">
+        <!-- Getting Started -->
+        <div class="row" id="getting-started-with-group-email">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <h3 class="thin center">Getting Started with JQ</h3>
+            <div class="spacer"></div>
+            <ul class="section" id="getting-started-list">
+                <li class="flow-text"><strong class="bold">Create your account</strong> to access your personal
+                    dashboard.
+                </li>
+                <li class="flow-text"><strong class="bold">Select a program</strong> that suites your growth goals.
+                </li>
+                <li class="flow-text"><strong class="bold">Start working out</strong> and enjoying the growth gains.
+                </li>
+            </ul>
 
-        <div class="row">
-            <div class="col s12 center">
-                <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4>Contact Us</h4>
-                <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque
-                    id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut
-                    ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem
-                    neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu
-                    mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum
-                    ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum
-                    primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <div class="section" id="getting-started-more-list">
+                <p class="flow-text">Create customize workouts, tailored exactly to your needs with the
+                    <a href="/workout-builder">Workout Builder</a>.</p>
+
+                <p class="flow-text">View your <a href="/delivery-reports">Progress Reports</a>
+                    help to track on track with your JQ goals.</p>
+
+                <p class="flow-text">Share workouts anonymously with other members from your
+                    <a href="/workout-builder">Personal Dashboard</a>.</p>
+
+                <p class="flow-text">Never miss a training session again with discrete
+                    <a href="/workout-reminders">Workout Reminders</a>.</p>
+            </div>
+
+            <div class="center section">
+                <a href="#create" class="btn btn-large create-list-link hero-btn">Get Started now
+                    <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                              d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+                    </svg>
+                </a>
             </div>
         </div>
+        <div class="divider-big"></div>
 
-    </div>
-</div>
-
-
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <!-- Make Group Email Easier -->
+        <div class="row" id="learn-more">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <span id="learn" class="scrollspy"></span>
+            <h2 class="thin center">Why use JQ?</h2>
+            <div class="spacer"></div>
+            <div>
+                <p class="flow-text"><strong class="bold">Group email</strong> is a powerful tool but it's not always
+                    been that easy to use. Running your own listserv is time consuming and other online services can be
+                    too complicated or restrictive in what they allow.</p>
+                <p class="flow-text">That’s where Gaggle Mail comes in, with a few clicks you get your own permanent
+                    group email address then easily customise how your group behaves and how messages appear within it.
+                    With a searchable message archive and delivery reports for every message sent you can easily keep
+                    track of what’s going on.</p>
+                <p class="flow-text">Whether you’re running a community group email list or sports club, church group or
+                    book club - Gaggle Mail is the group email service you can trust.</p>
+                <p class="flow-text">Thousands of groups have already chosen <strong class="bold">Gaggle Mail</strong>
+                    to help them stay better connected, start your <strong class="bold">30 day free trial</strong> now
+                    then prices start from just <strong class="bold">$10 per year</strong>.</p>
             </div>
         </div>
+        <div class="spacer"></div>
+        <div class="center">
+            <a href="#create" class="btn btn-large create-list-link hero-btn">Create your list
+                <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+                    <path fill="#ffffff"
+                          d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+                </svg>
+
+
+            </a>
+        </div>
+
+        <div class="divider-big"></div>
+
+
+        <!-- Feature List -->
+        <div class="row center" id="feature">
+            <span id="features" class="scrollspy"></span>
+            <h3 class="thin">Lots Of Features.</h3>
+            <div class="section"></div>
+            <div id="feature-table" class="card light">
+
+                <div class="feature-item">
+                    <p class="flow-text"><a href="/online-signup">Easy To Use</a><i
+                            class="mdi-navigation-check"></i>
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <p class="flow-text"><a href="/message-archive">Simple Tutorials</a><i
+                            class="mdi-navigation-check"></i></p>
+                </div>
+
+                <div class="feature-item">
+                    <p class="flow-text"><a href="/custom-email-footer">Progress Tracking</a><i
+                            class="mdi-navigation-check"></i></p>
+                </div>
+
+                <div class="feature-item">
+                    <p class="flow-text"><a href="/online-signup">Private Dashboard</a><i
+                            class="mdi-navigation-check"></i>
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <p class="flow-text"><a href="/message-archive">Exercise Timers</a><i
+                            class="mdi-navigation-check"></i></p>
+                </div>
+
+                <div class="feature-item">
+                    <p class="flow-text"><a href="/delivery-reports">Workout Builder</a><i
+                            class="mdi-navigation-check"></i></p>
+                </div>
+
+                <div class="feature-item">
+                    <p class="flow-text"><a href="/daily-digest-email">Reminders</a><i
+                            class="mdi-navigation-check"></i></p>
+                </div>
+
+
+                <a href="#create" class="btn btn-large create-list-link">Get Started
+                    <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                              d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+                    </svg>
+
+
+                </a>
+            </div>
+            <div class="section"></div>
+        </div>
+        <div class="divider-big"></div>
+
+        <!-- Pricing -->
+        <div class="row center scrollspy" id="pricing">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <h3 class="thin">Simple Pricing.</h3>
+            <div class="section"></div>
+
+            <div class="section">
+                <p class="flow-text">All plans include <strong class="bold">all features</strong>.</p>
+                <p class="flow-text">Create your <strong class="bold">free account</strong> then choose a plan that
+                    grows with your JQ needs.</p>
+            </div>
+            <div class="row section">
+                <div class="col s12">
+                    <button id="annual-billing" class="center pill selected" href="#">Annual Billing</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4 l2 pricing-panel">
+                    <div class="pricing-member-count">Full</div>
+                    <div class="pricing-member-label">Member</div>
+                    <div class="pricing-price">
+                        <span class="pricing-price-yearly">$10 / year<br/></span></div>
+                </div>
+            </div>
+
+            <div class="section center">
+                <a href="#create" class="btn btn-large create-list-link hero-btn">Create your free account
+                    <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                              d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+                    </svg>
+
+
+                </a>
+            </div>
+        </div>
+        <div class="divider-big"></div>
+
+        <!-- If you can use email... -->
+        <div class="row" id="simple">
+            <h3 class="thin center">"If you can use email, you can use Gaggle Mail."</h3>
+            <div class="spacer"></div>
+            <p class="flow-text">Everyone has an email address and everyone uses email, it's the one universal means of
+                communication on the internet.</p>
+            <p class="flow-text">Communicating with a group of people by email should be as simple as communicating with
+                one - but it isn't. What happens if someone doesn't use reply-to-all? Or what if someones changes their
+                email address?</p>
+            <p class="flow-text">Gaggle Mail solves these problems by giving your group it's own permanent <strong
+                    class="bold">@gaggle.email</strong> email address that anyone in the group can use to reach everyone
+                else in the group.</p>
+            <div class="spacer"></div>
+            <div class="center">
+                <a href="#create" class="btn btn-large create-list-link hero-btn">Create your list now
+                    <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                              d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+                    </svg>
+
+
+                </a>
+            </div>
+        </div>
+        <div class="spacer"></div>
     </div>
-    <div class="parallax"><img src="/images/background3.jpg" alt="Unsplashed background img 3"/></div>
-</div>
+</main>
 
-
-<footer class="page-footer teal">
+<footer class="page-footer white">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -165,16 +366,13 @@
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
-        <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-        </div>
-    </div>
+
 </footer>
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="/javascripts/materialize.js"></script>
 <script src="/javascripts/init.js"></script>
+<script src="/javascripts/home_all-min.js"></script>
 </body>
 </html>
