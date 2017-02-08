@@ -13,13 +13,16 @@
     <link href="/stylesheets/home.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
+<input type="text" id="field1" name="field1"/>
+<label for="field1" th:text="#{field1}"></label>
+
 <body>
 
 <nav class="white">
     <div class="nav-wrapper white">
         <div class="container">
             <div class="row" style="height:100px">
-                <a href="#" class="brand-logo">JQ</a>
+                <a href="#" class="brand-logo" th:text="${nombre}">JQ</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down teal-text accent-3">
                     <li><a href="#about">About</a></li>
                     <li><a href="#pricing">Pricing</a></li>
