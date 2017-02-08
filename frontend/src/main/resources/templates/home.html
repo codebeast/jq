@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <title>JQ</title>
+    <title th:text="#{home.title}"></title>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -11,12 +11,35 @@
     <link href="/stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="/stylesheets/home.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+    <link th:href="${canonical}" rel="canonical"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="description" th:content="#{home.meta.description}" />
+
+
+    <meta property="og:title" th:content="#{home.title}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" th:content="${canonical}" />
+    <meta property="og:description" th:content="#{home.meta.description}" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:url" th:content="${canonical}"/>
+    <meta name="twitter:title" th:content="#{home.title}"/>
+    <meta name="twitter:description" th:content="#{home.meta.description}"/>
+
+    <link th:href="${url}"/>
+
+    <link th:each="state : ${T(com.javabeast.domain.Language).values()}" th:value="${state}"
+          th:href="${url} + '?lang=' + ${state.displayName}"/>
+
+
 </head>
 
-<input type="text" id="field1" name="field1"/>
-<label for="field1" th:text="#{field1}"></label>
-
 <body>
+<div th:with="currentUrl=(${#httpServletRequest.requestURI + '?' + #strings.defaultString(#httpServletRequest.queryString, '')})">
+    <a th:href="@{${currentUrl}(myparam=test)}">click here</a>
+</div>
 
 <nav class="white">
     <div class="nav-wrapper white">
